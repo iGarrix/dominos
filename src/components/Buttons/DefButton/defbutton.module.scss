@@ -1,0 +1,15 @@
+.defbutton {
+	@apply uppercase font-bold tracking-wider z-50 bg-light p-[2px] transition-all border-2 border-grapefruit/0;
+
+	.wrap {
+		@apply px-[1rem] py-[0.5rem];
+	}
+
+	&:hover {
+		@apply border-grapefruit bg-light/0 text-white rotate-[-3deg] shadow;
+
+		.wrap {
+			@apply bg-grapefruit;
+		}
+	}
+}

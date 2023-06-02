@@ -1,0 +1,3 @@
+.historycard {
+	@apply rounded-sm bg-white flex flex-col h-full items-center w-[calc(220px+6rem)] overflow-hidden shadow-sm transition-all relative hover:bg-light/90 hover:shadow-xl;
+}

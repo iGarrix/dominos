@@ -1,0 +1,12 @@
+.carousel {
+	@apply w-full h-full overflow-hidden relative;
+
+	.counterwrap {
+		@apply absolute bottom-[2rem] left-[3rem] text-light z-50 backdrop-blur-sm;
+
+		.title {
+			@apply font-rubikmono text-6xl flex gap-[1rem] text-transparent tracking-widest;
+			-webkit-text-stroke: 1px white;
+		}
+	}
+}

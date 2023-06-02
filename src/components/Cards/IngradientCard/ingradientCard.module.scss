@@ -1,0 +1,31 @@
+.cardWrap {
+	@apply flex justify-center flex-wrap;
+
+	.cardSubwrap {
+		@apply w-[320px] bg-white flex flex-col rounded-sm pt-[1rem] gap-[1rem];
+
+		.imgcard {
+			@apply w-[280px] h-[200px] object-contain rounded-xl px-[1rem] mix-blend-multiply;
+		}
+
+		.cardcontent {
+			@apply w-full flex flex-col gap-[1rem] pb-[1rem] text-dark;
+
+			.type {
+				@apply border-b border-b-light/40 text-white font-semibold uppercase text-center py-[0.3rem];
+			}
+
+			.wrapctx {
+				@apply flex flex-col w-full px-[1rem];
+
+				.titlecard {
+					@apply uppercase text-xl font-semibold font-rubik;
+				}
+
+				.desccard {
+					@apply whitespace-break-spaces;
+				}
+			}
+		}
+	}
+}

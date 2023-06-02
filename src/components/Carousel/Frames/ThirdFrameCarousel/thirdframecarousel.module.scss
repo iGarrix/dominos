@@ -1,0 +1,45 @@
+.thirdframecarousel {
+	@apply w-full h-[calc(100vh-7rem)] relative;
+
+	.bgimage {
+		@apply absolute top-0 left-0 object-cover w-full h-full;
+	}
+
+	.cont {
+		@apply w-full h-full backdrop-blur-sm bg-gradient-to-b from-dark/0 to-dark/80 grid grid-cols-5;
+
+		.fpart {
+			@apply col-span-2 flex flex-col gap-[2rem] items-center justify-center flex-wrap px-[10%] overflow-hidden relative;
+
+			.squarewrap {
+				@apply flex h-full gap-[4rem] absolute top-[-100%] left-[15%];
+
+				.square {
+					@apply bg-jeans w-[5rem] h-[250vh] mix-blend-difference -rotate-6;
+				}
+			}
+
+			.title {
+				@apply text-jeans font-rubikmono text-4xl mix-blend-difference;
+			}
+			.desc {
+				@apply text-aqua text-xl;
+			}
+			.btnwrap {
+				@apply w-full flex justify-end z-10;
+			}
+		}
+
+		.spart {
+			@apply col-span-3 flex flex-col items-center justify-center overflow-hidden gap-[2rem] relative;
+
+			.btnwrap {
+				@apply absolute bottom-0 w-full flex justify-end px-[2rem] py-[2rem] z-50;
+			}
+
+			.bg2 {
+				@apply object-contain w-[800px] h-[800px] absolute right-[-20%] top-[-35%];
+			}
+		}
+	}
+}

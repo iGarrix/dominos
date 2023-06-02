@@ -1,0 +1,61 @@
+.ingradientsview {
+	@apply w-full h-full flex flex-col bg-light relative;
+
+	.bg1 {
+		@apply absolute top-0 left-0 object-cover w-full h-full;
+	}
+
+	.headblock {
+		@apply w-full h-full bg-light z-10 relative;
+
+		.bgblock {
+			@apply absolute top-0 left-0 object-cover w-full h-full;
+		}
+
+		.headblock_wrap {
+			@apply w-full h-full backdrop-blur py-[2rem] bg-dark/20;
+
+			.headblock_wrap_sub {
+				@apply w-[90vw] h-full relative rounded overflow-hidden mx-auto shadow-2xl -skew-x-12;
+
+				.bg_sub {
+					@apply absolute top-0 left-0 w-full h-[99%] object-cover skew-x-12;
+				}
+				.content_headblock {
+					@apply w-full h-full backdrop-blur bg-dark/30 py-[5rem] px-[10%] text-light flex items-center;
+
+					.subcontent_headblock {
+						@apply flex flex-col gap-[1rem] skew-x-12 h-full;
+
+						.title_headblock {
+							@apply font-rubikmono text-2xl uppercase;
+						}
+						.desc_headblock {
+							@apply text-xl;
+						}
+
+						.starlist {
+							@apply flex items-center gap-[.5rem];
+
+							.star {
+								@apply text-sun text-xl;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.backrow {
+		@apply w-full bg-dark py-[0.5rem] z-10 text-light;
+
+		.title {
+			@apply font-rubikmono text-2xl text-center;
+		}
+	}
+
+	.contentWrap {
+		@apply w-full px-[10%] grid grid-cols-5 gap-[1rem] py-[2rem] h-full z-10 backdrop-blur;
+	}
+}

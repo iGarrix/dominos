@@ -1,0 +1,15 @@
+.notfoundview {
+    @apply w-screen h-screen relative;
+
+    .btn {
+        @apply -skew-x-12 px-[2rem] py-[0.5rem] text-white text-lg transition-all;
+
+        .wrapper {
+            @apply skew-x-12 font-rubik tracking-widest;
+        }
+
+        &:hover {
+            @apply bg-grapefruit/100 py-[1rem];
+        }
+    }
+}

@@ -1,0 +1,43 @@
+.formikfieldWrapper {
+	@apply border-2 rounded-sm border-dark px-[1rem] flex items-center w-full;
+
+	&.error {
+		@apply text-grapefruit border-grapefruit-200/40;
+	}
+
+	&.success {
+		@apply text-black border-slate-300;
+	}
+
+	.icon {
+		@apply cursor-pointer;
+	}
+
+	.inp {
+		@apply outline-none focus:outline-none py-[0.5rem] bg-transparent w-full;
+
+		&:focus {
+			@apply text-dark;
+		}
+
+		&.ificon {
+			@apply px-[1rem];
+		}
+
+		&.ifnoicon {
+			@apply px-0;
+		}
+
+		.error {
+			@apply text-grapefruit;
+		}
+
+		.success {
+			@apply text-mint;
+		}
+
+		&:-webkit-autofill {
+			background-clip: text;
+		}
+	}
+}

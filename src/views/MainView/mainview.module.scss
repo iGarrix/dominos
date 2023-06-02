@@ -1,0 +1,15 @@
+.mainview {
+	@apply flex flex-col w-full bg-light overflow-x-hidden;
+
+	.marqContainer {
+		@apply bg-dark py-[0.5rem] text-light select-none;
+
+		.wrap {
+			@apply flex w-screen justify-around;
+
+			.item {
+				@apply font-sync whitespace-nowrap font-thin text-xl px-[1rem] uppercase;
+			}
+		}
+	}
+}

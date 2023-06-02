@@ -1,0 +1,25 @@
+.deftoats {
+	@apply fixed top-[8.5vh] right-[5vh] backdrop-blur rounded-sm w-[15vw] z-[1000] text-light shadow-2xl;
+
+	&.info {
+		@apply bg-grass-200/100;
+	}
+	&.warning {
+		@apply bg-sun/80;
+	}
+	&.error {
+		@apply bg-grapefruit/80;
+	}
+
+	.container {
+		@apply flex flex-col flex-wrap px-[1rem] py-[0.5rem] w-full h-full relative;
+
+		.contentWrapper {
+			@apply flex flex-col gap-[0.5rem] flex-wrap;
+
+			.title {
+				@apply font-semibold;
+			}
+		}
+	}
+}

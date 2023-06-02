@@ -1,0 +1,7 @@
+.mainfooter {
+	@apply w-full h-full flex py-[0.5rem] relative bg-light text-dark items-center justify-center border-b border-b-slate-300;
+
+	.title {
+		@apply text-2xl font-rubikmono flex items-center gap-[1rem];
+	}
+}

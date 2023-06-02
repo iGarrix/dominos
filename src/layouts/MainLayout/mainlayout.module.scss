@@ -1,0 +1,16 @@
+.mainlayout {
+	@apply mt-[5rem] bg-light relative;
+	.loader {
+		@apply fixed top-0 left-0 w-full h-[2.5rem] bg-gradient-to-r from-grapefruit via-grass to-pinkrose contrast-200 z-[100] opacity-60;
+		animation: loading 1s ease-out infinite;
+	}
+}
+
+@keyframes loading {
+	0% {
+		@apply w-[0%];
+	}
+	100% {
+		@apply w-[100%];
+	}
+}

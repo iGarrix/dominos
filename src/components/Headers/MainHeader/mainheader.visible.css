@@ -1,0 +1,7 @@
+.visibility {
+	@apply transition-all translate-y-0;
+}
+
+.hiddenal {
+	@apply transition-all translate-y-[-100%];
+}

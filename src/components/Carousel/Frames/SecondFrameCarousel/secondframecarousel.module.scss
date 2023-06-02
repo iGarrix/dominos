@@ -1,0 +1,56 @@
+.secondframecarousel {
+	@apply w-full h-[calc(100vh-7rem)] relative;
+
+	.bgimage {
+		@apply absolute top-0 left-0 object-cover w-full h-full;
+	}
+
+	.cont {
+		@apply w-full h-full backdrop-blur-sm bg-gradient-to-b from-dark/0 to-dark/80 grid grid-cols-5;
+
+		.fpart {
+			@apply col-span-2 flex flex-col gap-[2rem] items-center justify-center flex-wrap px-[10%] overflow-hidden relative;
+
+			.square {
+				@apply bg-grapefruit w-[60%] h-[200px] absolute top-[30%] skew-x-12 left-[8%] mix-blend-difference rotate-[5deg];
+			}
+
+			.title {
+				@apply text-grapefruit font-rubikmono text-4xl mix-blend-difference;
+			}
+			.desc {
+				@apply text-grapefruit text-xl;
+			}
+			.btnwrap {
+				@apply w-full flex justify-end z-10;
+			}
+		}
+
+		.spart {
+			@apply col-span-3 flex flex-col items-center justify-end overflow-hidden gap-[2rem] relative pb-[20%];
+
+			.btnwrap {
+				@apply absolute bottom-0 w-full flex justify-end px-[2rem] py-[2rem];
+			}
+
+			.bg {
+				@apply object-contain w-[600px] h-[600px] absolute top-[-10%] right-[25%];
+			}
+
+			.wrapspart {
+				@apply flex gap-[1rem] items-center px-[5%] relative mix-blend-difference font-rubikmono;
+
+				.square2 {
+					@apply absolute right-0 w-[50%] h-[4rem] bg-bittersweet mix-blend-difference skew-x-12;
+				}
+
+				.step {
+					@apply text-xl uppercase font-bold w-full whitespace-nowrap text-bittersweet mix-blend-difference;
+				}
+				.arrow {
+					@apply text-bittersweet text-xl;
+				}
+			}
+		}
+	}
+}

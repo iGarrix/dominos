@@ -1,0 +1,7 @@
+.cartview {
+	@apply min-h-screen flex flex-col w-full flex-wrap relative;
+}
+
+.nocart {
+	@apply min-h-[calc(100vh-5rem)] flex flex-col flex-wrap items-center justify-center gap-[2rem];
+}

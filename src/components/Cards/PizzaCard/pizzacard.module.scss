@@ -1,0 +1,7 @@
+.pizzacard {
+	@apply rounded-sm bg-white flex flex-col items-center w-[calc(220px+6rem)] overflow-hidden shadow-sm transition-all relative;
+
+	&:hover {
+		@apply bg-white/50 shadow-xl;
+	}
+}
